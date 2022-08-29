@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.automate.listeners.Listeners"/>
+        <listener class-name="com.automate.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="ASUS_Z01RD">
+        <parameter name="platformName" value="ANDROID"></parameter>
+        <parameter name="emulator" value="no"></parameter>
+        <parameter name="udid" value="J6AAGF02Z353GX4"></parameter>
+        <parameter name="deviceName" value="ASUS_Z01RD"></parameter>
+        <parameter name="systemPort" value="7878"/>
+        <classes>
+            <class name="testScripts.StudentCreditCheckTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
